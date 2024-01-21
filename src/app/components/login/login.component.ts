@@ -84,7 +84,7 @@ export class LoginComponent implements OnInit {
         if (res.data === 'ADMIN') {
           alert('Đăng nhập thành công.');
           sessionStorage.setItem('currentUser', newObj.username);
-          this.router.navigate(['/index']);
+          this.router.navigate(['/nhanvien-danhsach']);
         } else {
           alert('Tài khoản không đủ quyền truy cập.');
         }
